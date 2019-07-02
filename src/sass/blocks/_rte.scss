@@ -1,0 +1,81 @@
+.rte {
+  @extend %txt--rte;
+
+  p + p {
+    margin-top: 1em;
+  }
+
+  a:hover,
+  a:hover * {
+    text-decoration: underline;
+  }
+
+  h3,
+  h4 {
+    margin: 1.25em 0 .75em;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  strong {
+    @extend %ff--500;
+  }
+
+  em strong,
+  strong em {
+    @extend %ff--500;
+    font-style: italic;
+  }
+
+  ul {
+    margin-top: 1.5em;
+    margin-bottom: .75em;
+
+    li {
+      position: relative;
+      padding-left: 1.5em;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: .4em;
+        left: 0;
+        width: .2em;
+        height: .2em;
+        border-radius: 100%;
+        background-color: cc(accent);
+      }
+
+      & + li {
+        margin-top: .5em;
+      }
+    }
+  }
+
+  figure {
+    text-align: center;
+    margin: 2.25em 0;
+  }
+
+  figcaption {
+    font-size: 14px;
+    text-align: center;
+    font-style: italic;
+  }
+
+  img {
+    display: inline-block;
+    max-width: 100%;
+  }
+
+  iframe {
+    max-width: 100%;
+  }
+
+  address {
+    display: inline-block;
+  }
+}

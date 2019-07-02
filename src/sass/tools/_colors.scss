@@ -1,0 +1,33 @@
+// colors
+//$ghost-white: #fcfdff;
+$ghost-white: #f0f2f4;
+$mystic: #dae4eb;
+$gunmetal: #2a3744;
+$smoky-black: #0a0908;
+$dark: #161618;
+$space: #767676;
+
+// cc map
+$colors:(
+  default:(
+    header: $dark,
+    bg: $ghost-white,
+    border-bottom: $space,
+    txt: $smoky-black,
+    primary: $gunmetal,
+    border: $mystic,
+    shadow: $smoky-black,
+    overlay: $gunmetal,
+    selection: rgba($gunmetal, .33)
+  ),
+
+  alt:(
+    txt: $gunmetal,
+    bg: $mystic,
+    border: $gunmetal
+  ),
+
+  inv:(
+    txt: $ghost-white
+  )
+);

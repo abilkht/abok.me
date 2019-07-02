@@ -1,0 +1,134 @@
+.post {
+  padding: 0 1.25rem 0;
+  background-color: cc(bg);
+  transform: translate3d(0, 0, 0);
+
+  &-enter-active { transition: all 375ms cb(out) 225ms }
+  &-leave-active { transition: all 300ms cb(in) }
+
+  &-enter,
+  &-leave-to {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  @media (--laptop) {
+    position: fixed;
+    top: 0;
+    left: calc(100% / 3 + 3.25rem);
+    width: calc(100% / 1.5 - 3.25rem);
+    height: 100%;
+    padding: 10rem 5rem 5rem 0;
+    overflow-y: scroll;
+
+    &-enter-active { transition: all 525ms cb(out) 225ms }
+    &-leave-active { transition: all 350ms cb(in) }
+
+    &-enter,
+    &-leave-to {
+      opacity: 0;
+      transform: translate3d(100%, 0, 0);
+    }
+  }
+
+  @media (--monitor) {
+    width: 62rem;
+    left: calc(50% - 12rem);
+  }
+
+  &__header {
+    @media (--tablet) {
+      position: absolute;
+      bottom: 100%;
+      right: 0;
+      width: 50vw;
+      height: calc(70vw - 2.5rem);
+      display: flex;
+      flex-direction: column;
+      padding-right: 2.5rem;
+      padding-bottom: 2.5rem;
+    }
+
+    @media (--laptop) {
+      position: static;
+      width: auto;
+      height: auto;
+      display: block;
+      margin-bottom: 1.25rem;
+      padding-bottom: 0;
+    }
+  }
+
+  &__title {
+    @extend %txt--title;
+    display: none;
+
+    @media (--tablet) {
+      display: block;
+      color: cc(txt, alt);
+      margin-bottom: .75rem;
+      padding-left: 1.25rem;
+    }
+  }
+
+  &__meta {
+    display: none;
+
+    @media (--tablet) {
+      display: block;
+      margin-bottom: 1.25rem;
+      padding-left: 1.25rem;
+      padding-bottom: 1.25rem;
+    }
+
+    @media (--laptop) {
+      border-bottom: 1px solid cc(border);
+    }
+  }
+
+  &__sep {
+    display: block;
+    height: .625rem;
+
+    @media (--laptop) {
+      display: inline-block;
+      margin: 0 .5rem;
+
+      &::before {
+        content: 'today';
+        font-family: 'Material Icons', sans-serif;
+      }
+    }
+  }
+
+  &__subtitle {
+    @extend %txt--subtitle;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2.5rem 1.25rem 2.5rem;
+
+    @media (--tablet) {
+      padding-top: 1.25rem;
+    }
+
+    @media (--laptop) {
+      padding-right: 7.5rem;
+    }
+  }
+
+  &__body {
+    padding: 1.25rem 1.25rem 3.75rem;
+    border-bottom: 1px solid cc(border);
+
+    @media (--laptop) {
+      padding: 0 1.25rem 2.5rem;
+    }
+  }
+
+  &__footer {
+    margin-top: 3.75rem;
+    padding: 0 1.25rem;
+  }
+}
