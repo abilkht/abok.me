@@ -131,4 +131,17 @@
     margin-top: 3.75rem;
     padding: 0 1.25rem;
   }
+
+  #link {
+    padding-top: .5rem;
+  }
+  /* unvisited link */
+  a:link {
+    color: #1A0DAB;
+  }
+
+  /* visited link */
+  a:visited {
+    color: #609;
+  }
 }

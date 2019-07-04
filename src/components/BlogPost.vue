@@ -13,6 +13,7 @@
       </header>
 
       <section class="post__body rte" v-html="content"></section>
+      <blockquote id="link" class="post__body rte"><a :href="link" target="_blank">About using google</a></blockquote>
 
       <footer class="post__footer">
         <vue-disqus v-if="commentsReady" shortname="abokt"
@@ -38,6 +39,7 @@ export default {
       content: '',
       published: '',
       description: '',
+      link: 'https://codeahoy.com/2016/04/30/do-experienced-programmers-use-google-frequently/',
       commentsReady: false,
       ready: false
     }

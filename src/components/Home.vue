@@ -80,7 +80,7 @@
 </script>
 
 <style lang="scss" scoped>
-  @import "../sass/blocks/main";
+  @import "../sass/blocks/home";
 </style>
 
 <style lang="scss">
