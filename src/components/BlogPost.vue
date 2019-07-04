@@ -39,7 +39,7 @@ export default {
       content: '',
       published: '',
       description: '',
-      link: 'https://codeahoy.com/2016/04/30/do-experienced-programmers-use-google-frequently/',
+      link: 'https://news.ycombinator.com/item?id=11603078',
       commentsReady: false,
       ready: false
     }
