@@ -12,7 +12,7 @@
 
         <div class="nav__menu">
           <router-link to="/blog">
-            <button>Blog</button>
+            <button>Posts</button>
           </router-link>
         </div>
 
@@ -53,7 +53,6 @@
               <a href="https://github.com/aboookt" target="_blank" class="btn github"><i class="fa fa-github"></i></a>
               <a href="https://t.me/aboookt" target="_blank" class="btn telegram"><i class="fa fa-telegram"></i></a>
               <a href="https://www.facebook.com/aboookt" target="_blank" class="btn facebook"><i class="fa fa-facebook"></i></a>
-              <a href="https://vk.com/aboookt" target="_blank" class="btn vk"><i class="fa fa-vk"></i></a>
               <a href="https://open.spotify.com/user/abilkhaiyr" target="_blank" class="btn spotify"><i class="fa fa-spotify"></i></a>
             </p>
           </section>
