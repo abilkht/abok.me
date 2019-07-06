@@ -9,11 +9,11 @@
           <time>{{ prettyDate(published) }}</time>
         </h3>
 
-        <blockquote class="post__subtitle">{{ description }}</blockquote>
+<!--        <blockquote class="post__subtitle">{{ description }}</blockquote>-->
       </header>
 
       <section class="post__body rte" v-html="content"></section>
-      <blockquote id="link" class="post__body rte"><a :href="link" target="_blank">About using google</a></blockquote>
+      <blockquote id="link" class="post__body rte"><a :href="link" target="_blank">{{ linkDescription }}</a></blockquote>
 
       <footer class="post__footer">
         <vue-disqus v-if="commentsReady" shortname="abokt"
@@ -39,7 +39,8 @@ export default {
       content: '',
       published: '',
       description: '',
-      link: 'https://news.ycombinator.com/item?id=11603078',
+      link: '',
+      linkDescription: '',
       commentsReady: false,
       ready: false
     }
