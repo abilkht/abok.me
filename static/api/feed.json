@@ -1,12 +1,6 @@
 {
   "results": [
     {
-      "title": "стих",
-      "image": "/static/icons/posts/girl_black.jpg",
-      "published": "2019-07-06T12:29:00Z",
-      "id": "poem"
-    },
-    {
     "title": "why computer science",
     "image": "/static/icons/posts/hackNU19.jpg",
     "published": "2019-07-03T12:29:00Z",
