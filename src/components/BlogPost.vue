@@ -9,7 +9,7 @@
           <time>{{ prettyDate(published) }}</time>
         </h3>
 
-<!--        <blockquote class="post__subtitle">{{ description }}</blockquote>-->
+        <blockquote v-if="description" class="post__subtitle">{{ description }}</blockquote>
       </header>
 
       <section class="post__body rte" v-html="content"></section>
