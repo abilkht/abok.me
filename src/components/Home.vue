@@ -6,7 +6,7 @@
 
         <div class="nav__title">
           <router-link to="/">
-            <img id="logo" src="../../static/icons/android-chrome-512x512.png" alt="Logo Abok">
+            <img id="logo" src="../../static/icons/android-chrome-512x512.png" alt="Logo Abilkhaiyr Taibekov">
           </router-link>
         </div>
 
@@ -24,7 +24,7 @@
         <section id="intro" class="intro">
           <div class="intro__content">
             <div class="intro__image-placeholder">
-              <img id="image" src="../../static/icons/b_me-b_w.png" alt="Image Abok">
+              <img id="image" src="../../static/icons/b_me-b_w.png" alt="Image Abilkhaiyr Taibekov">
             </div>
             <div class="intro__text">
               <vue-typer :text="text" erase-style="select-back" :pre-erase-delay="1000" :erase-delay="50" caret-animation="smooth" />
