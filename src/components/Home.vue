@@ -11,9 +11,9 @@
         </div>
 
         <div class="nav__menu">
-          <router-link to="https://abokwdm.netlify.com/">
+          <a href="https://abokwdm.netlify.com/">
             <button>Posts</button>
-          </router-link>
+          </a>
         </div>
 
       </nav>
